@@ -5,4 +5,4 @@ project(ProjectName)
 add_subdirectory(src)
 add_subdirectory(tests)
 
-add_executable(TestName test.cpp)
+add_executable(TestName Test.cpp)
