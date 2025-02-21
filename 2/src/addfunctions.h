@@ -43,7 +43,7 @@ std::vector<T> operator*(plotMatrics<T> a,std::vector<T> b){
 template <typename T>
 std::vector<T> operator*(CSRMatrics<T> a,std::vector<T> b){
     std::vector<T> r(a.ny_r(a),0);
-    for (size_t i=0;i<a.a_r(a).size();i++){
+    for (size_t i=0;i<a.ny_r(a).size();i++){
         for (size_t g=a.NY_r(a)[i]; g<a.NY_r(a)[i+1];g++){
             r[i]=r[i]+a.a_r(a)[g]*b[g];
         }
